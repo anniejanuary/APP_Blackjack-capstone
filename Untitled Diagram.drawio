@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-07T09:05:46.261Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="jqEGpGDLvclAWv2aT6Iv" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-07T09:07:09.307Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="62M9BuBErmxV-u6X6Q9M" version="20.2.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2211" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2903" dy="1092" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -26,6 +26,9 @@
         </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-8" value="deal user 2 cards, add to sum" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="150" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bh-nWVLwaKQK6NmqN_dG-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Bh-nWVLwaKQK6NmqN_dG-9" target="Bh-nWVLwaKQK6NmqN_dG-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-9" value="deal computer&#39;s card" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="170" y="560" width="120" height="60" as="geometry" />
@@ -57,18 +60,20 @@
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-18" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.582;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Bh-nWVLwaKQK6NmqN_dG-14" target="Bh-nWVLwaKQK6NmqN_dG-17">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="420" y="690" />
+              <mxPoint x="670" y="690" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-14" value="is user&#39;s score &amp;lt;= 21 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="190" y="650" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Bh-nWVLwaKQK6NmqN_dG-16" value="STOP" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="350" y="920" width="120" height="60" as="geometry" />
+        <mxCell id="Bh-nWVLwaKQK6NmqN_dG-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Bh-nWVLwaKQK6NmqN_dG-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="1640" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-17" value="print: You&#39;ve lost" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="350" y="810" width="120" height="60" as="geometry" />
+          <mxGeometry x="600" y="1420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-27" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Bh-nWVLwaKQK6NmqN_dG-26" target="Bh-nWVLwaKQK6NmqN_dG-10">
           <mxGeometry relative="1" as="geometry" />
@@ -79,8 +84,13 @@
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-26" value="is computer&#39;s score &amp;lt;= 21?&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry y="720" width="80" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="Bh-nWVLwaKQK6NmqN_dG-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Bh-nWVLwaKQK6NmqN_dG-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-28" value="print: You&#39;ve won" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="250" y="1090" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="1420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Bh-nWVLwaKQK6NmqN_dG-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Bh-nWVLwaKQK6NmqN_dG-37" target="Bh-nWVLwaKQK6NmqN_dG-39">
           <mxGeometry relative="1" as="geometry" />
