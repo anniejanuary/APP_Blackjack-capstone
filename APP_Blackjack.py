@@ -69,8 +69,7 @@ def check_result (sum_user, sum_computer):
       
       replace_ace(sum(user_cards))
       
-      print(f"Your cards after replacing 11 with 1: {user_cards}, current score: {sum(user_cards)}")
-      print(f"Computer's cards: {computer_cards}, current score: {sum(computer_cards)}")
+      print(f"    Your cards after replacing 11 with 1: {user_cards}, current score: {sum(user_cards)}")
       check_result (sum(user_cards), sum(computer_cards))
       
     else:
@@ -98,20 +97,20 @@ def replace_ace (sum_user):
 def another_card (yes, no):
   if input("Type 'y' to get another card, type 'n' to pass: ") == 'y':
     user_cards.append(random.choice(cards))
-    print(f"Your cards: {user_cards}, current score: {sum(user_cards)}")
+    print(f"    Your cards: {user_cards}, current score: {sum(user_cards)}")
+    check_result (sum(user_cards), sum(computer_cards))
     
-    user_takes_another_card (sum(user_cards), sum(computer_cards))
+    user_took_another_card (sum(user_cards), sum(computer_cards))
   else:
-    user_doesnt_take_another_card (sum(user_cards), sum(computer_cards))
+    user_didnt_take_another_card (sum(user_cards), sum(computer_cards))
 
     
 #COMPUTER NEXT ROUNDS after if another_card_choice == 'y':
-def user_takes_another_card (sum_user, sum_computer):
+def user_took_another_card (sum_user, sum_computer):
   if sum_computer < 17:  
-    next_computer_card = random.choice(cards)
     computer_cards.append(random.choice(cards))
-    sum_computer += next_computer_card
-    print(f"Computer's cards: {computer_cards}, current score: {sum_computer}")
+    sum_computer
+    print(f"    Computer's cards: {computer_cards}, current score: {sum_computer}")
     check_result (sum(user_cards), sum(computer_cards))
     another_card ('y', 'n')
   else:
@@ -122,12 +121,12 @@ def user_takes_another_card (sum_user, sum_computer):
 
   
 #COMPUTER NEXT ROUNDS after if another_card_choice == 'n':
-def user_doesnt_take_another_card (sum_user, sum_computer):
+def user_didnt_take_another_card (sum_user, sum_computer):
   while sum_computer < 17:  
     next_computer_card = random.choice(cards)
     computer_cards.append(next_computer_card)
     sum_computer += next_computer_card
-    print(f"Computer's cards: {computer_cards}, current score: {sum_computer}")
+    print(f"    Computer's cards: {computer_cards}, current score: {sum_computer}")
   if sum_computer >= 17:
       check_result (sum(user_cards), sum(computer_cards))
       final_count (sum(user_cards), sum(computer_cards))
