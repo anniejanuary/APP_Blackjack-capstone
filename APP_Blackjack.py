@@ -57,10 +57,10 @@ def check_result (sum_user, sum_computer):
   
   #DOES USER OR COMPUTER HAVE A BLACKJACK == 21 ?
   if sum_user == 21 and len(user_cards) == 2: # checking if 10 and 11 in cards
-    print("You have a Blackjack, you win!")
+    print("You have a Blackjack, you win! 🤩")
     play_again('y', 'n')
   elif sum_computer == 21 and len(computer_cards) == 2:
-    print("Computer has a Blackjack, you lose!")
+    print("Computer has a Blackjack, you lose! ☠️")
     play_again('y', 'n')
 
   #DOES USER SCORE >21?
@@ -74,12 +74,12 @@ def check_result (sum_user, sum_computer):
       check_result (sum(user_cards), sum(computer_cards))
       
     else:
-      print("You lose!")
+      print("You lose! ☠️")
       play_again('y', 'n')
 
   #DOES COMPUTR SCORE >21?
   if sum_computer > 21:
-    print("You win!")
+    print("You win! 😄")
     play_again('y', 'n')
 
 # REPLACING ACE's VALUE using For Loop
@@ -136,25 +136,25 @@ def user_doesnt_take_another_card (sum_user, sum_computer):
 # FINAL COUNT 
 def final_count (sum_user, sum_computer):
   if sum_computer > sum_user:
-      print("You lose!")
+      print("You lose! ☠️")
       play_again('y', 'n')
   elif sum_computer == sum_user:
-      print("It's a draw")
+      print("It's a draw 😐")
       play_again('y', 'n')
   elif sum_computer < sum_user:
-      print("You win!")
+      print("You win! 😄")
       play_again('y', 'n')
     
     
 # RESTART THE GAME ?
 def play_again (yes, no):
-  again = input("Would you like to play again? y or n: ")
+  again = input("Would you like to play again? 🤨 y or n: ")
   if again == yes:
     user_cards.clear()
     computer_cards.clear()
     new_game()
   else:
-    print("Goodbye then!")
+    print("Goodbye then! 👋")
     keep_playing = False
     exit() ### break is not working if i place it in the while Keep_playing loop below
 
